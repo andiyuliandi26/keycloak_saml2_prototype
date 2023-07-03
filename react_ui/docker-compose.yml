@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  react-saml:
+    container_name: react-saml
+    build:
+      context: .
+    volumes:
+      - .:/app
+    ports:
+      - "4040:80"

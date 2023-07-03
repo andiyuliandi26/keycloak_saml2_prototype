@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  django-saml:
+    build: .
+    command: bash -c "python manage.py runserver 0.0.0.0:8000"
+    container_name: django-saml
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
